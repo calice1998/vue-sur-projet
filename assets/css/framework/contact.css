@@ -1,0 +1,138 @@
+.contact {
+    height: 100vh;
+    z-index: var(--z-index-contact);
+    background-color: white;
+    border-left: 10px solid gray;
+    position: relative;
+}
+
+.container {
+    padding-top: 100px;
+}
+.container .iocn i {
+    position: relative;
+    color: blue;
+    z-index: var(--z-index-contact);
+}
+
+.container .first-section-us .icons i {
+    font-size: 2.2rem;
+}
+
+.container .first-section-us h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+    width: 180px;
+    margin-bottom: 30px;
+
+}
+
+.container .first-section-us .icons p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.container .first-section-us .icons {
+    margin-bottom: 20px;
+}
+
+.second-section-us h3 {
+    width: 190px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+    margin-bottom: 30px;
+}
+
+.second-section-us form input {
+    width: 700px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.second-section-us form input::placeholder{
+    color: #ccc;
+}
+
+.form-row div {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 150px;
+    color: #ccc;
+    padding-top: 10px;
+
+}
+
+
+.second-section-us form .message {
+    padding-bottom: 150px;
+    padding-top: 20px;
+}
+
+.second-section-us form input .message {
+    height: 150px;
+    top: 10px;
+    display: flex;
+    position: absolute;
+}
+
+.second-section-us form img {
+    width: 700px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.second-section-us form .send {
+    border: 1px solid orange;
+    width: 120px;
+    padding: 5px;
+    padding-left: 12px;
+}
+
+
+/***************************** MEDIA ****************************/
+
+@media screen and (max-width: 768px) {
+    .contact .container{
+        display: block;
+    }
+    .form-row div {
+        font-size: 1.2rem;
+        position: absolute;
+        right: 150px;
+        color: #ccc;
+        padding-top: 10px;
+    }
+
+    .second-section-us img {
+        width: 90%;
+        height: 90%;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width: 574px) {
+   /* .content{
+        padding-left: 95px;
+    }
+    .first-section-us{
+        left: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .second-section-us form input {
+        width: 95%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    .second-section-us form img {
+        width: 95%;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-widht: 427px) {}

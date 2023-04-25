@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-nav {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aside-left" "content";
+
+}
+
+.aside-left .profile .picture img {
+    border-radius: 100px;
+    width: 150px;
+    height: 5Opx;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.aside-left .fullname p {
+    color: gray;
+    text-align: center;
+}
+
+.aside-left .fullname h1 {
+    text-align: center;
+}
+
+.aside-left .fullnames-us-item ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+.aside-left .fullnames-us-item li:hover {
+    background-color: aliceblue;
+    border-right: 3px solid orange;
+}
+
+.aside-left .fullnames-us-item ul li {
+    height: 50px;
+    text-align: center;
+    border: 0.1px solid #ccc;
+    border-right: none;
+    border-right: none;
+    /*box-shadow: 0 3px 5PX -1px rgb(0 0 0 / 20%);
+    0 5px 8px 0 rgb(0 0 0 /14%);
+    0 1px 14px 0 rgb(0 0 0 / 12%);*/
+}
+
+.aside-left .fullnames-us-item {
+    margin-bottom: 50px;
+}
+
+.aside-left {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+   /* grid-area: aside-left;*/
+    background-color: white;
+    z-index: var(--z-index-aside-left);
+}
+
+.resume .title-name{
+    gap: 10px;
+    display: flex;
+}
+.resume .title-name p{
+    padding-top: 15px;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/images/miel/ux-.jpg);
+    background-size: cover;
+    background-position: fixed;
+    flex: 1;
+    /*grid-area: content;*/
+    z-index: var(--z-index-content);
+}
+
+.content .icon img{
+    background-color: #ccc;
+    border: 100px;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+/*.container-nav{
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "aside-left" "content";
+}*/
+
+.infos-home {
+    padding-left: 600px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fullnames-us-item .active {
+    background-color: aliceblue;
+}
+
+.content .fullinfos-nav .old {
+    border-bottom: 0.1px solid orange;
+    /*text-decoration: underline orange;*/
+    margin-bottom: 15px;
+}
+
+.content .fullinfos-nav .ad {
+    /* text-decoration: underline orange;*/
+    border-bottom: 0.1px solid orange;
+    margin-bottom: 15px;
+}
+
+.content .fullinfos-nav .phone {
+    /*text-decoration: underline orange;*/
+    border-bottom: 0.1px solid orange;
+    margin-bottom: 15px;
+}
+
+.content .fullinfos-nav .mail {
+    /*text-decoration: underline orange;*/
+    border-bottom: 0.1px solid orange;
+    margin-bottom: 15px;
+}
+
+.content .fullinfos-nav .free {
+    /*text-decoration: underline orange;*/
+    border-bottom: 0.1px solid orange;
+    margin-bottom: 15px;
+}
+
+.overlay {
+    background-color: #1d1d1d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: var(--z-index-overlay);
+    opacity: 0.8;
+}
+
+.usernames-icons .social-icon ul li {
+    padding: 15px;
+    background-color: #ccc;
+}
+
+.fullinfos-nav {
+    color: #ccc;
+    font-weight: bold;
+    line-height: 20px;
+    z-index: var(--z-index-fullinfos-nav);
+    padding-top: 250px;
+    padding-bottom: 200px;
+    position: relative;
+
+}
+
+.fullinfos-nav .title-nav h2 {
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.fullinfos-nav .title-nav p {
+    font-size: 1.3rem;
+    font-weight: 0;
+}
+
+.fullinfos p {
+    margin: 0;
+}
+
+.profile .fa-bars {
+    font-size: 2rem;
+}
+
+/********************************* MADIA **************************************/
+
+@media screen and (max-width: 1200px) {
+    .container-nav {
+        display: block;
+    }
+
+    .aside-left {
+        width: 95%;
+    }
+
+    .aside-left .profile .picture img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    .aside-left {
+        width: 95%;
+        height: 95%;
+    }
+
+    .infos-home {
+        padding-left: 50px;   
+    }
+    
+
+    .infosleft {
+        display: none;
+    }
+
+    .aside-left .fa-bars {
+        display: block;
+        font-size: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 574px) {}
+
+@media screen and (max-widht: 427px) {}
+
+.resume-cv .search p {
+    border: 2px solid orange;
+    border-radius: 50px;
+    height: 20px;
+    width: 300px;
+}

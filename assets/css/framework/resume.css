@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    gap: 100px;
+}
+.resume{
+    height: 100vh;
+    z-index: var(--z-index-portfolio);
+    background-color: white;
+    border-left: 10px solid gray;
+    position: relative
+}
+
+.container .login-cv h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline orange;
+   /* border-bottom: 3px solid orange;*/
+    width: 107px;
+    margin-bottom: 40px;
+    
+}
+
+.container .login-cv h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline orange;
+    /*border-bottom: 3px solid orange;*/
+    width: 116px;
+    margin-bottom: 40px;   
+}
+
+.container .login-cv .resume-cv .year {
+    background-color: #1f1F;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.container .login-cv .resume-cv .year2 {
+    background-color: #1f1F;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 240px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 30px;
+}
+.container .login-cv .resume-cv .year3 {
+    background-color: #1f1F;
+    padding-left: 80px;
+    padding-top: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container .login-cv .cv {
+    border: 1px solid orange;
+    width: 130px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 50px;
+    
+}
+.container .login-cv .cv2 {
+    border: 1px solid orange;
+    width: 130px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-top: 50px;
+    
+}
+.container .login-cv .resume-cv .course {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.container .login-cv .resume-cv .univers {
+    color: gray;
+    font-size: 1rem;
+}
+.container .login-cv .resume-cv p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.container .login-cv .resume-cv p,
+.container .login-cv .resume-cv .univers,
+.container .login-cv .resume-cv .course {
+    padding-left: 30px;
+}
+
+.resume .title-name{
+    gap: 10px;
+    display: flex;
+}
+.resume .title-name p{
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        display: block;
+    }
+
+    .container .login-cv .cv{
+        display: none;
+    }
+    .container .login-cv .cv2{
+        display: block;
+    }
+}

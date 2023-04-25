@@ -1,0 +1,12 @@
+:root{
+    --z-index-content: 996;
+    --z-index-overlay: 997;
+    --z-index-fullinfos-nav: 999;
+    --z-index-icon: 999;
+    --z-index-aboutme: 999;
+    --z-index-contact: 999;
+    --z-index-resume: 999;
+    --z-index-portfolio: 999;
+    --z-index-aside-left: 999;  
+}
+
